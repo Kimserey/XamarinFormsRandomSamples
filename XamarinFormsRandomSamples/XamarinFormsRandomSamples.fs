@@ -3,6 +3,14 @@
 open System.ComponentModel
 open Xamarin.Forms
 
+(** 
+
+
+    Simple example of INotifyPropertyChanged implementation and
+    notify to UI of property changes via binding.
+
+
+**)
 type ViewModelBase() =
     let propertyChanged  = new Event<PropertyChangedEventHandler, PropertyChangedEventArgs>()
 
